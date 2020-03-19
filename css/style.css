@@ -1,0 +1,536 @@
+div#topo
+{
+	background:#bebebe; /*tirar cor topo */
+	width:945px;
+	height:165px;
+
+	margin:auto;
+}
+div#logo
+{
+	background:;/*apos por logo pode apagar background*/
+	width:310px;
+	height:80px;
+	margin-top:30px;
+	float:left;/*float indica direção da div - esquerda */
+}
+
+div#login
+{
+	background:#bebebe;
+	width:200px;
+	height:70px;
+	margin:50px;
+	float:right;/*float indica direção da div - direita */
+}
+
+div#login p
+{
+	font-family:verdana;
+	font-size:12px;
+}
+
+div#menu
+{	position:relative;
+	background:#CB0302; 
+	width:100%;
+	height:60px;
+	margin:0 auto;
+    border-width:1px;
+    border-radius: 20px 20px 20px;
+	float:center;
+       
+}
+#amor{
+color:#fff;
+	font-family:verdana;
+	font-size:15px;
+	text-decoration: none;/*tirar sombriado*/
+	margin-top:20px;
+	margin-left:200px;/*margem a esquerda fazendo com que de espaçamento entre os menus(links)*/
+	display:block;/*bloqueia a linha e faz com que pule para a linha de baixo*/
+	float:left; /*usando float left passa a ficar links na mesma linha */
+}
+}
+div#menu a
+{
+	color:#fff;
+	font-family:verdana;
+	font-size:15px;
+	text-decoration: none;/*tirar sombriado*/
+	margin-top:20px;
+	margin-left:50px;/*margem a esquerda fazendo com que de espaçamento entre os menus(links)*/
+	display:block;/*bloqueia a linha e faz com que pule para a linha de baixo*/
+	float:left; /*usando float left passa a ficar links na mesma linha */
+
+}
+
+/*mudar cor ao passar mouse em cima*/
+div#menu a:hover
+{
+	color:#000000;
+}
+divi #b a:hover{}
+div#menu input
+{
+	margin-top:20px;
+	float: right;
+	margin-right:20px;
+}
+
+div#banner
+{
+        position:relative;
+        top:30px;
+	background:#bebebe; 
+	width:945px;
+	height:200px;
+	margin:0 auto;	
+}
+
+div#conteudo
+{
+        position:relative;
+        top:100px;
+	background:#bebebe; 
+	width:945px;
+	height:400px;
+	margin:0 auto;
+   
+
+}
+
+div .chamada
+{
+	background:#000000; 
+	width:248px;
+	height:360px;
+	margin:0 auto;
+	margin-top:20px;
+	margin-left:50px;
+        border-radius:11px;
+	float:left;/*deixar um do lado do outro*/
+
+}
+
+
+
+div#image
+{
+border-radius: 50%;
+}
+
+
+
+div#menu img /* alinhar icones */
+{
+     position:relative;
+     display:block;
+     right:10px;
+     top:-8px;
+}
+
+
+
+.dropbtn {   /* Menu dropdown */
+
+    background-color:#CB0302;
+    color: white;
+    padding: 9px;
+    font-family:verdana;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown {   /* Menu dropdown */
+
+    position:absolute;
+    display: inline-block;
+    left:450px;
+    top:10px;
+
+}
+
+.dropdown-content {   /* Menu dropdown */
+
+    display: none;
+    position: absolute;
+    background-color:#CB0302;
+    border-width:1px;
+    border-radius: 20px 20px 20px;
+    width:280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropdown-content a {    /* Menu dropdown */
+
+    color: black;
+    padding: 7px 7px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {background-color:}   /* Menu dropdown */
+
+.dropdown:hover .dropdown-content {    /* Menu dropdown */
+    display: block;
+}
+
+.dropdown:hover .dropbtn {    /* Menu dropdown */
+    background-color:;
+}
+
+
+
+.container {    /*Caixa Busca */
+width:35%;
+position:absolute;
+height:60%;
+left:1000px;
+top:-15px;
+}
+input {
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 50px;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  z-index: 3;
+  transition: width 1s ease-out;
+  cursor: pointer;
+}
+input:focus { 
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 50%;
+  z-index: 1;
+  transition: width 1s ease-in;
+}
+
+button#busca { 
+  height: 49px;
+  width: 50px;
+  background:  url('/imagens/lupa.png')  center no-repeat;
+  border:none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+button#busca:focus {
+  outline: none;
+}
+/* esconde o LABEL "Buscar" */
+label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding:0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border:5;	
+}
+
+
+/* Botão Login */
+.bt {
+  font-family:Arial black;
+  color:#000000;
+  font-size: 15px;
+  padding: 2px 14px 4px 14px;
+  text-decoration: none;
+}
+
+
+/*Botoes do usuario*/
+div#usuario
+{
+position:relative;
+width:400px;
+height:50px;
+font-family:Arial black;
+color:#000000;
+float:right;
+top:-37%;
+}
+
+div#bemvindo
+{
+
+position:relative;
+width:150px;
+height:60px;
+font-family:Arial black;
+color:#000000;
+float:right;
+top:90px;
+left:285px;
+background:  url('imagens/ola.png')  center no-repeat;
+}
+
+
+
+.dropbtnn {   /* Menu dropdown */
+   
+    background-color:#CB0302;
+    color: white;
+    padding: 9px;
+    font-family:verdana;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdownn {   /* Menu dropdown */
+    position:absolute;
+    display: inline-block;
+    
+    left:30%;
+    top:18px;
+
+}
+
+.dropdownn-content {   /* Menu dropdown */
+
+    display: none;
+    position: absolute;
+    background-color:#CB0302;
+    border-width:1px;
+    border-radius: 20px 20px 20px;
+    min-width:300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropdownn-content a {    /* Menu dropdown */
+
+    color: black;
+    padding: 7px 7px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdownn-content a:hover {background-color:}   /* Menu dropdown */
+
+.dropdownn:hover .dropdownn-content {    /* Menu dropdown */
+    display: block;
+}
+
+.dropdownn:hover .dropbtnn {    /* Menu dropdown */
+    background-color:;
+}
+
+
+
+div#mercadorias 
+{
+ position:relative;
+    top:130px;
+	background:#bebebe; 
+	width:945px;
+	height:20px;
+	margin:auto;	
+	float:center;
+}
+
+div#M
+{
+    position:relative;
+    top:10px;
+	background:#FFFFFF; 
+	width:300px;
+	height:600px;
+	margin:10px 10px 1px 0px;
+	border-width:1px;
+    border-radius: 20px 20px 20px;
+	float:left;
+	left:100px;
+	}
+	
+	div#descricao   /* onde vai por descrição do uto*/
+	
+	{ 
+	position:absolute;
+    top:5px;
+	background:#EBEBF0;
+	width:280px;
+	height:300px;
+	margin:10px 1px 1px 10px;
+	border-width:1px;
+    border-radius: 20px 20px 20px;
+	
+	}
+	
+	
+	div#textoproduto  /* onde vai por descrição do produto*/
+	
+	{ 
+	position:absolute;
+    top:190px;
+	background:#EBEBF0;
+	width:280px;
+	height:200px;
+	margin:10px 1px 1px 10px;
+	border-width:1px;
+    border-radius: 20px 20px 20px;
+	
+	}
+
+	
+	
+	div#comprar   /* onde esta os botoes e caixa de quantidade*/
+	{ 
+	position:relative;
+    top:410px;
+	background:#FFFFFF; 
+	width:250px;
+	height:150px;
+	margin:10px 10px 5px 10px;
+	border-width:1px;
+    border-radius: 20px 20px 20px;
+	float:left;
+	}
+	
+	input[type=number]{ 
+	position:relative;
+    top:80px;
+	border-radius:1px;
+	background:#bebebe; 
+	border-radius: 5px 5px 5px;
+	width:30px;
+	height:35px;
+	left:20px;
+	
+}
+
+
+button.css3button {   /* botao comprar e add carrinho */
+    position:relative;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#CB0302 0%,
+		#CB0302);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#CB0302),
+		to(#CB0302));
+		right:-50px;
+		top:80px;
+}
+
+button.css3button1 {  /* botao comprar e add carrinho */
+    position:relative;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#CB0302 0%,
+		#CB0302);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#CB0302),
+		to(#CB0302));
+	
+		right:-73px;
+		top:-20px;
+}
+
+
+
+
+ul#cardapio {      /* cardapio */
+    position:relative;
+    list-style-type: none;   
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background-color:#CB0302;
+    border-width:1px;
+    border-radius: 10px 10px 10px;
+	top:40px;
+	font-family:verdana;
+	font-size:15px;
+	
+}
+
+li a {
+    display: block;
+    color: #fff;
+    padding: 16px 16px;
+    text-decoration: none;
+    border-width:1px;
+    border-radius: 10px 10px 10px;
+}
+
+li a.active {
+    background-color:#000000;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color:#000000;
+    color: white;
+}
+	div#carrinho {   /* carrinho */
+    position:absolute;
+    display: inline-block;
+    left:700px;
+    top:0px;
+}
+
+table, td, th {  
+
+    border: 1px solid #ddd;
+    text-align:center;
+	
+	
+}
+
+table {
+	position:relative;
+    border-collapse: collapse;
+    width:100%;
+	top:60px;
+}
+
+th, td {
+    padding: 15px;
+}
+
+
+	.finalizar {
+	position:relative;
+	top:200px;
+	
+    background-color:#CB0302;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	float:right;
+}

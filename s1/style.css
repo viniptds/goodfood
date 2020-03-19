@@ -1,0 +1,586 @@
+
+html, body
+{	
+    height: auto;
+    font-family: arial;
+}
+
+ #corpo
+{
+    background-image: url('/imagens/fundo.jpg');
+}
+div#topo
+{
+	top:10px;
+  height:50px;
+  float:auto;
+  }
+  
+div#login
+{	left:420px;
+    position: relative;
+	background:none;
+	width:300px;
+	height:40px;
+	margin:auto;
+	float:auto;/*float indica direção da div - direita */
+}
+div#b a:hover{color:#bb2026;}
+div#login a:hover
+{	
+	color:#bb2026;
+	border-radius: 13px 13px 13px 13px;
+	box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+div#menu
+{	
+	position:relative;
+	background:#bb2026; 
+	box-shadow: 20px 15px 15px  rgba(0,0,0,0.2);
+	width:940px;
+	height:60px;
+	margin:0 auto;
+    border-width:1px; 
+    border-radius: 13px 13px 13px 13px;
+	top:31px;      
+}
+
+div#ped
+{
+	position:relative;
+	left:244px;
+	width:10px;
+}
+
+div#cad
+{   
+    position:relative;
+	left:230px;
+	margin:auto;
+	float:auto;
+}
+
+div#pg a
+{
+color:#000;
+text-decoration: none;
+}
+
+
+
+/*DIV DOS BOTOES PAGINA INICIAL E LOGIN - PÁGINA DE MEU CADASTRO
+*/
+div#btcd a{color:#000;
+text-decoration: none;
+position:relative;
+left:10px;
+}
+
+div#btcd a:hover 
+{
+    color:color:#bb2026;
+
+;}
+
+div#cd a
+{
+	color:#000;
+  text-decoration: none; 
+}
+div#bot input:hover {color:#bb2026;}
+
+div#pg a:hover
+{
+	color:#bb2026;
+    
+}
+	
+
+	fieldset
+	{
+	    margin:auto;
+	    border-color:#bb2026; 
+	    border-radius:10px;
+	    position: relative;
+	    background:rgba(0,0,0,0.20);
+	}
+	div#cd a:hover
+	{
+	color:#bb2026;
+	border-radius: 13px 13px 13px 13px;
+	}
+
+	div#nv a:hover {color:#bb2026;}
+
+
+
+	div#cont
+	{ /*DIV que contem o botao notificacao do parceiro*/
+	position:relative;
+    left:70%;
+    top: -32px;
+    width:300px;
+	}
+	
+	div#nv a
+{
+	font-size:16px;
+	color:#000;
+	text-decoration: none;
+}
+
+/*PAGINA MINHA CONTA*/
+div#fieldmc 
+{
+    margin:auto;
+    width:200px;
+    height:120px;
+    text-align:left;
+    position:relative;
+    left:-370px;
+    top:30px;
+    border-color:#000;
+    border-radius: 13px 13px 13px 13px;
+	box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
+    
+} 
+
+div#fieldmc a 
+{
+    text-decoration: none;
+    color:#000;
+    font-size:15px;
+    position:relative;
+    left:20px;
+    top:15px;
+}
+
+div#fieldmc a:hover
+{
+    color:#bb2026;
+} 
+	
+div#menu a
+{
+	color:#fff;
+	font-size:20px;
+	text-decoration: none;/*tirar sombriado*/
+	margin-top:20px;
+	margin-left:30px;/*margem a esquerda fazendo com que de espaçamento entre os menus(links)*/
+	display:block;/*bloqueia a linha e faz com que pule para a linha de baixo*/
+	float:left; /*usando float left passa a ficar links na mesma linha */
+
+}
+
+/*mudar cor ao passar mouse submenu */
+div#menu a:hover
+{
+		color:#000;
+}
+
+div#menu input
+{
+	margin-top:20px;
+	float: right;
+	margin-right:20px;
+}
+
+div#banner
+{ 
+	position:relative;
+    top:45px; /*espaçamento entre menu e banner de propagandas*/
+	background:none; 
+	width:940px;
+	height:200px;
+	margin:0 auto;	
+    border-radius: 13px 13px 13px 13px;	 
+}
+
+div#conteudo
+{
+    position:relative;
+    top:130px;
+	background:none; 
+	width:940px;
+	height:407px;
+	margin:0 auto;
+	box-shadow: 0px 15px 15px 15px rgba(0,0,0,0.4);
+	border-radius: 13px 13px 13px 13px;
+}
+
+div#confirmatab 
+{
+    box-shadow: 0px 15px 15px 15px rgba(0,0,0,0.4);
+	border-radius: 13px 13px 13px 13px;
+	width:350px;
+	height:200px;
+	position: relative;
+    left: 570px;
+    top: 20px;
+    
+}
+
+div .chamada
+{
+	background:none; 
+	width:248px;
+	height:300px;
+	margin:0 auto;
+	margin-top:20px;
+	margin-left:50px;
+    border-radius:11px;
+	float:left;/*deixar um do lado do outro*/
+}
+
+
+
+div#image
+{
+border-radius: 50%;
+}
+
+
+
+div#menu img /* alinhar icones */
+{
+     position:relative;
+     display:block;
+     right:10px;
+     top:-8px;
+}
+
+ /* ------  Menu dropdown -------  */
+div#dropdown-content a:hover
+{
+	color:#bb2026;
+	opacity:none;
+}
+
+/*----- LUGARES ------*/
+.dropbtn 
+{  
+    position: relative;
+    background:none;
+    color:#fff;
+	width:-10px;
+	/*height:50px;direcionando menu lugares*/
+    padding: 20px;
+    font-size:20px;
+    border: none;
+    cursor: pointer;
+    top:10px;	
+	/*não usar left aqui senão o sensor do mouse fica longe do menu lugaressss*/
+}
+
+/*----- SENSOR DO MOUSE PARA EXIBIR SUB ------*/
+.dropdown
+{  
+    position: absolute ;
+	left:200px;
+	HEIGHT:50px;
+    display: inline-block;
+	top: -10px;
+
+}
+
+
+/*DIRECIONAMENTO DA CAIXA DO SUB*/
+.dropdown-content
+{   
+	display:none; /*passar o mouse para ver o submenu*/	
+    position:relative ;
+    width:220px;/**/
+	height:110px;/*altura da caixa do sub*/
+    box-shadow: 7px 7px 1px 1px rgba(0,0,0,0.3);
+    z-index: 1;
+    background:rgba(0,0,0,0.20);
+    border-radius: 19px 19px 19px 19px;
+	top:-1px;
+  	left:1px;	
+	
+}
+
+.dropdown-content a {    /* Menu dropdown */
+
+    padding:1px ;/*distancia entre as opções do submenu*/
+    text-decoration: none;
+    display: none;
+}
+
+.dropdown-content a:hover {border-radius: 13px 13px 13px 13px;}   /* Menu dropdown */
+
+.dropdown:hover .dropdown-content {    /* Menu dropdown */
+    display: block;
+}
+
+/* Botão Login */
+.bt {
+ 
+  color:#000;
+  font-size:18px;
+  padding: 2px 14px 4px 14px;
+text-decoration: none;/*tirar sombriado*/
+  display:inline-block;
+}
+
+div#usuario a:hover
+{
+	color:#bb2026;
+	border-radius: 13px 13px 13px 13px;
+	box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+	}
+/*Botoes do usuario*/
+div#usuario
+{
+    left:325px;
+    position: relative;
+	background:none;
+	width:300px;
+	height:40px;
+	margin:auto;
+	top:10px;
+	float:auto;/*float*/
+}
+div#bemvindo a:hover{
+	color:#bb2026;
+	border-radius: 13px 13px 13px 13px;
+	box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+	}
+	
+div#bemvindo
+{
+    left:-280px;
+    position: relative;
+	background:none;
+	width:300px;
+	height:40px;
+	margin:auto;
+	top:-30px;
+	float:auto;/*float*/
+}
+
+
+
+div#mercadorias 
+{
+ position:relative;
+    top:-96.5px; 
+	width:945px;
+	height:auto;
+	margin:auto;	
+	left:15px;
+}
+
+div#M
+{
+
+   
+    position:relative;
+	background:#FFFFFF; 
+	width:300px;
+	height:480px;
+	margin:1px 2px 10px 0px;
+	border-width:4px;
+    border-radius: 20px 20px 20px;
+	float:left;
+	}
+	
+	div#descricao   /* onde vai por descrição do produto*/
+	
+	{ 
+	position:absolute;
+    top:5px;
+	background:#EBEBF0;
+	width:280px;
+	height:300px;
+	margin:10px 1px 1px 10px;
+	border-width:1px;
+    border-radius: 20px 20px 20px;
+	
+	}
+	
+	
+	div#textoproduto  /* onde vai por descrição do produto*/
+	
+	{ 
+	position:absolute;
+    top:190px;
+	background:#EBEBF0;
+	width:280px;
+	height:200px;
+	margin:10px 1px 1px 10px;
+	border-width:1px;
+    border-radius: 20px 20px 20px;
+	
+	}
+
+	
+	
+	div#comprar   /* onde esta os botoes e caixa de quantidade*/
+	{ 
+	position:relative;
+    top:410px;
+	background:#FFFFFF; 
+	width:250px;
+	height:150px;
+	margin:10px 10px 5px 10px;
+	border-width:1px;
+    border-radius: 20px 20px 20px;
+	float:left;
+	}
+	
+button.css3button1 {  /* botao comprar e add carrinho */
+    position:relative;
+
+	
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#CB0302 0%,
+		#CB0302);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#CB0302),
+		to(#CB0302));
+	
+		right:-73px;
+		top:420px;
+}
+
+
+
+
+ul#cardapio {      /* cardapio */
+    position:relative;
+    list-style-type: none;   
+    margin: auto;
+    width: 200px;
+    left:-580px;
+    background-color:#CB0302;
+    border-width:1px;
+    border-radius: 10px 10px 10px;
+	top:60px;
+    padding:0px;
+	font-size:15px;
+	
+}
+
+li a {
+    display: block;
+    color: #fff;
+    padding: 16px 16px;
+    text-decoration: none;
+    border-width:1px;
+    border-radius: 10px 10px 10px;
+}
+
+li a.active {
+    background-color:#000000;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color:#000000;
+    color: white;
+}
+
+/* carrinho */
+	div#carrinho {   
+    position:relative;
+    display: inline-block;
+    left:700px;
+    top:3px;
+}
+
+table, td, th {  
+
+    border: 1px solid #fff;
+    text-align:center;
+	
+	
+}
+
+table {
+	position:relative;
+    border-collapse: collapse;
+    width:600px;
+	top:60px;
+}
+
+th, td {
+    padding: 15px;
+}
+
+
+	.finalizar {
+	position:relative;
+	top:200px;
+	
+    background-color:#CB0302;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	float:right;
+}
+
+
+div#ender /*DIV DE Endereco na pag de confirmacao do pedido*/ 
+{
+    position:relative;
+    right: 300px;
+    top:35px;
+}
+div#fpag
+{
+    position:relative;
+    width: fit-content;
+    top: 40px;
+    right: 380px;
+}
+
+#pedidos
+{
+    position: relative;
+    margin:auto;
+    width: 996px;
+    top: 30px;
+    left:28px;
+}
+
+
+/*RODAPÉ*/
+
+footer
+{
+    text-align: center;
+    bottom: 0;
+	font-size:20px;
+	position:relative;
+	top:200px;
+	
+}
+
+.botaopedido {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 20px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+	position: relative;
+	left:-50px;
+}
