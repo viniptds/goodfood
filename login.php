@@ -60,7 +60,7 @@ function valida()
 	</div>
 	<br>
 	<div id="cd">
-		<a href="Cadastro.php">Cadastrar</a>
+		<a href="cadastro.php">Cadastrar</a>
 	</div>
 
 	</fieldset>

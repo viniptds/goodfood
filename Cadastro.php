@@ -20,8 +20,7 @@
  </script>
  </head>
  <?php
- require "conexao.php";
- include "cabecalho.php";
+ include "header.php";
 ?>
   <br><br><br><br><fieldset style='width:415px'>
   <form name="form1" method="post" action="cadastrabanco.php">

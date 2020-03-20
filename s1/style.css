@@ -7,7 +7,7 @@ html, body
 
  #corpo
 {
-    background-image: url('/imagens/fundo.jpg');
+    background-image: url('../imagens/fundo.jpg');
 }
 div#topo
 {
@@ -79,9 +79,9 @@ left:10px;
 
 div#btcd a:hover 
 {
-    color:color:#bb2026;
+    color:#bb2026;
 
-;}
+}
 
 div#cd a
 {
