@@ -43,7 +43,7 @@ class UserLogin
 	 * Configura as propriedades $logged_in e $login_error. Também
 	 * configura o array do usuário em $userdata
 	 */
-	public function check_userlogin () {
+	public function check_userlogin ($type = "cliente", $us = "") {
 	
 		// Verifica se existe uma sessão com a chave userdata
 		// Tem que ser um array e não pode ser HTTP POST
@@ -118,7 +118,7 @@ class UserLogin
 		
 		// Verifica se o usuário existe na base de dados
 		$query = $this->db->query( 
-			'SELECT * FROM users WHERE user = ? LIMIT 1', 
+			'SELECT * FROM ' . $type . ' WHERE user	 = ' . $us . ' LIMIT 1', 
 			array( $user ) 
 		);
 		

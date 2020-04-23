@@ -2,6 +2,7 @@
 /**
  * Configuração geral
  */
+//require_once "vendor/autoload.php";
 
 // Caminho para a raiz
 define( 'ABSPATH', dirname( __FILE__ ) );
@@ -35,5 +36,6 @@ define( 'DEBUG', true );
  */
 
 // Carrega o loader, que vai carregar a aplicação inteira
-require_once ABSPATH . '/loader.php';
+ require_once ABSPATH . '/loader.php';
+
 ?>

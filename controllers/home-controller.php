@@ -7,7 +7,7 @@ require_once("main-controller.php");
 
 class HomeController extends MainController
 {
-
+	
 	/**
 	 * Carrega a página "/views/home/home-view.php"
 	 */

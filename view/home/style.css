@@ -1,0 +1,54 @@
+div#banner
+{ 
+	position:   relative;    
+	width: 70%;
+	height: fit-content;
+	margin: 2% auto;	
+    border-radius: 13px 13px 13px 13px;	 
+}
+
+#banner-img
+{ 	
+    width: 100%;
+}
+
+div#conteudo
+{
+    position:relative;    
+    width: 70%;    
+    height:fit-content;    
+    text-align: center;
+    margin: 5% auto 10%;
+    padding: 2% 0;
+	box-shadow: 0px 15px 15px 15px rgba(0,0,0,0.4);
+	border-radius: 13px 13px 13px 13px;
+}
+
+div .chamada
+{	
+    text-align: center;
+	width: 90%;
+	height: 90%;
+		
+    border-radius:11px;	
+}
+
+#conteudo img {    
+    padding: 2% 2%;
+    vertical-align: middle;
+}
+
+div#image
+{
+border-radius: 50%;
+}
+
+
+
+div#menu img /* alinhar icones */
+{
+     position:relative;
+     display:block;
+     right:10px;
+     top:-8px;
+}

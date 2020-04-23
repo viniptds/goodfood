@@ -7,29 +7,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>GOOD FOOD - Início</title>
-        <link rel="stylesheet" type="text/css" href='./s1/style.css'/>
-        <script type="javascript" src="/slides.js"></script>
+		<title>
+			<?php echo $this->title; ?>
+		</title>
+        <link rel="stylesheet" type="text/css" href='/_includes/style.css'/>
     </head>
 	<script type="text/javascript">
   		function carregapag(){
       		document.getElementById("load").style.display="none";
       		document.getElementById("all").style.display="block";
   		}
-  	</script>
-  	<link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
+	</script>
+	  
+	<link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
+	  
 	<body id="corpo" onload="carregapag()">
- 	<div id="load">
-		<br>
-		<br>
-		<br>
-		<br/>
-		<center>
-			<img src="ajax-loader.gif">
-		</center>
-		</div> 
-		<div id="all" style="display:none;">
-			<div id="topo">
+
+ 	<div id="load">		
+		<img src="assets/load-icon.svg">		
+	</div> 
+
+	<div id="all">
+		<div id="topo">
 
 <?php
 	if(!isset($_SESSION['user']) && !isset($_SESSION['senha']) && !isset($_SESSION['tipo']))
@@ -37,13 +36,16 @@
 ?>  
 		<!-- BOTÃO LOGIN -->
 		<div id="login">
-			<a href="login.php" class="bt">Entrar</a>
-			<a href="cadastro.php" class="bt" align="right">Cadastrar</a>
+			<a href="./login" class="bt">Entrar</a>
+			<a href="./login/cadastro" class="bt" >Cadastrar</a>
 		</div>
-		</div>
-	 	<div id="menu">
+		</div>	
 
-		<a href="home"> Início <img src="imagens/home.png" style="float:left"  alt=""/></a> </div>
+	 	<div id="menu">
+			<a href="home"> 
+				Início <img src="imagens/home.png" style="float:left"  alt=""/>
+			</a> 
+		</div>
 <?php
 	} 
 	if(isset($_SESSION['user']) && isset($_SESSION['tipo']) == 'Cliente')

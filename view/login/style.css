@@ -1,0 +1,25 @@
+
+#login-option 
+{
+    height:25px; 
+    width:80px; 
+    font-size:15px;
+}
+
+.bt-form 
+{
+    font-size: 15px;
+    width: 70px; 
+    height: 30px;
+}
+
+.formlogin {
+    width: fit-content;
+    margin: 2% auto;        
+	border-color:#bb2026; 
+    border-radius:10px;
+    border-style: inset;
+    position: relative;
+    padding: 5%;
+	background:rgba(0,0,0,0.05);
+}

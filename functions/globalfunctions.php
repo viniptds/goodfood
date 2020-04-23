@@ -28,10 +28,10 @@ function chk_array ( $array, $key ) {
  * Por exemplo: para a classe TutsupMVC, o arquivo vai chamar class-TutsupMVC.php
  */
 
-function __autoload($class_name) {
+spl_autoload_register(function($class_name) {
 
-	$file = ABSPATH . '/classes/class-' . $class_name . '.php';
-	
+	$file = ABSPATH . DIRECTORY_SEPARATOR .'classes'. DIRECTORY_SEPARATOR .'class-' . $class_name . ".php";	
+
 	if ( ! file_exists( $file ) ) {
 		require_once ABSPATH . '/includes/404.php';
 		return;
@@ -39,4 +39,4 @@ function __autoload($class_name) {
 	
 	// Inclui o arquivo da classe
     require_once $file;
-} // __autoload
+}); // __autoload

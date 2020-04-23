@@ -73,6 +73,7 @@ class MainController extends UserLogin
 	 */
 	public function __construct ( $parametros = array() ) {
 	
+		
 		// Instancia do DB
 		$this->db = new GoodFoodDB();
 		

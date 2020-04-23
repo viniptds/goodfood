@@ -1,0 +1,9 @@
+{
+    "name": "viniciuspadovan/goodfood",
+    "autoload": {
+        "psr-4": {
+            "GoodFoodMVC\\": "GoodFoodMVC/"
+        }
+    },
+    "require": {}
+}

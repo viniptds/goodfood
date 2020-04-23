@@ -1,6 +1,6 @@
 <?php
 
-require_once("functions/globalfunctions.php");
+//require_once("functions/globalfunctions.php");
 
 // Evita que usuários acesse este arquivo diretamente
 if ( ! defined('ABSPATH')) exit;
@@ -24,7 +24,8 @@ if ( ! defined('DEBUG') || DEBUG === false ) {
 }
 
 // Funções globais
-//require_once ABSPATH . '/functions/globalfunctions.php';
+require_once ABSPATH . '/functions/globalfunctions.php';
+
 
 // Carrega a aplicação
 $goodfood = new GoodFoodMVC();

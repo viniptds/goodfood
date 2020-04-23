@@ -1,16 +1,29 @@
-var myIndexum = 0;
-    um();
+var myIndex = 0;
 
-    function um() {
+changeSlide();
+
+    function changeSlide() {
         var i;
-        var x = document.getElementsByClassName("mySlide2");
-        for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+        var slide1 = document.getElementsByClassName("mySlide1");
+        var slide2 = document.getElementsByClassName("mySlide2");
+        var slide3 = document.getElementsByClassName("mySlide3");
+
+        for (i = 0; i < slide1.length; i++) {
+            slide1[i].style.display = "none";  
+            slide2[i].style.display = "none";  
+            slide3[i].style.display = "none";  
         }
-        myIndexum++;
-        if (myIndexum > x.length) {myIndexum = 1}    
-        x[myIndexum-1].style.display = "block";  
-        setTimeout(um, 5000 ); // TEMPO PARA PASSAR A IMAGEM    
+        
+        if (myIndex > slide1.length) {
+            myIndex = 0
+        }         
+
+
+        slide1[myIndex].style.display = "block";  
+        slide2[myIndex].style.display = "block";  
+        slide3[myIndex].style.display = "block";  
+
+        setTimeout(changeSlide, 5000 );    
     }
 
     function dois() {
@@ -20,7 +33,9 @@ var myIndexum = 0;
            x[i].style.display = "none";  
         }
         myIndexdois++;
-        if (myIndexdois > x.length) {myIndexdois = 1}    
+        if (myIndexdois > x.length) {
+            myIndexdois = 1
+        }    
         x[myIndexdois-1].style.display = "block";  
         setTimeout(dois, 5000 ); // TEMPO PARA PASSAR A IMAGEM -->     
     }
@@ -28,12 +43,14 @@ var myIndexum = 0;
     
     function tres() {
         var i;
-        var x = document.getElementsByClassName("mySlide4");
+        var x = document.getElementsByClassName("mySlide3");
         for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+            x[i].style.display = "none";  
         }
         myIndextres++;
-        if (myIndextres > x.length) {myIndextres= 1}    
+        if (myIndextres > x.length) {
+            myIndextres= 1
+        }    
         x[myIndextres-1].style.display = "block";  
         setTimeout(tres, 5000 ); // TEMPO PARA PASSAR A IMAGEM -->     
     }

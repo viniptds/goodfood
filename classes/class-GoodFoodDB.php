@@ -68,7 +68,7 @@ class GoodFoodDB
 		 
 		// Tenta conectar
 		try {
-		
+			
 			$this->pdo = new PDO($pdo_details, $this->user, $this->password);
 			
 			// Verifica se devemos debugar
@@ -76,7 +76,6 @@ class GoodFoodDB
 			
 				// Configura o PDO ERROR MODE
 				$this->pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
-				
 			}
 			
 			// Não precisamos mais dessas propriedades
@@ -86,14 +85,12 @@ class GoodFoodDB
 			unset( $this->user     );
 			unset( $this->charset  );
 		
-		} catch (PDOException $e) {
-			
+		} catch (PDOException $e) {		
 			// Verifica se devemos debugar
 			if ( $this->debug === true ) {
 			
 				// Mostra a mensagem de erro
-				echo "Erro: " . $e->getMessage();
-				
+				echo "Erro: " . $e->getMessage();				
 			}
 			
 			// Kills the script

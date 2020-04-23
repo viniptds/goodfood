@@ -1,31 +1,61 @@
 
 html, body
 {	
-    height: auto;
+	margin: 0;
+	height: 100%;
+	width: 100%;
     font-family: arial;
 }
 
  #corpo
 {
-    background-image: url('../imagens/fundo.jpg');
+    background-image: url('../../assets/fundo.jpg');
 }
-div#topo
+
+div#load 
 {
-	top:10px;
-  height:50px;
-  float:auto;
-  }
-  
-div#login
-{	left:420px;
-    position: relative;
-	background:none;
-	width:300px;
-	height:40px;
-	margin:auto;
-	float:auto;/*float indica direção da div - direita */
+	text-align: center;
+	vertical-align: middle;	
+	height: 100%;
 }
-div#b a:hover{color:#bb2026;}
+
+#all
+{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+div#topo
+{	
+	display: table;
+	height:10%;  
+	width: 75%;
+	margin: 0 auto;
+}
+	
+div#menu img /* alinhar icones */
+{
+     position:relative;
+     display:block;
+     right:10px;
+     top:-8px;
+}
+
+div#login
+{	
+    position: relative;
+	background:none;	
+	display: table-cell;
+	text-align: right;		
+	vertical-align: middle	;	
+}
+
+div#b a:hover
+{
+	color:#bb2026;
+}
+
 div#login a:hover
 {	
 	color:#bb2026;
@@ -38,12 +68,11 @@ div#menu
 	position:relative;
 	background:#bb2026; 
 	box-shadow: 20px 15px 15px  rgba(0,0,0,0.2);
-	width:940px;
+	width: 75%;
 	height:60px;
 	margin:0 auto;
     border-width:1px; 
-    border-radius: 13px 13px 13px 13px;
-	top:31px;      
+    border-radius: 13px 13px 13px 13px;	    
 }
 
 div#ped
@@ -88,7 +117,10 @@ div#cd a
 	color:#000;
   text-decoration: none; 
 }
-div#bot input:hover {color:#bb2026;}
+div#bot input:hover 
+{
+	color:#bb2026;
+}
 
 div#pg a:hover
 {
@@ -97,33 +129,28 @@ div#pg a:hover
 }
 	
 
-	fieldset
-	{
-	    margin:auto;
-	    border-color:#bb2026; 
-	    border-radius:10px;
-	    position: relative;
-	    background:rgba(0,0,0,0.20);
-	}
-	div#cd a:hover
-	{
+
+div#cd a:hover
+{
 	color:#bb2026;
 	border-radius: 13px 13px 13px 13px;
-	}
+}
 
-	div#nv a:hover {color:#bb2026;}
+div#nv a:hover 
+{
+	color:#bb2026;
+}
 
 
-
-	div#cont
-	{ /*DIV que contem o botao notificacao do parceiro*/
-	position:relative;
-    left:70%;
-    top: -32px;
-    width:300px;
-	}
+div#cont
+{ /*DIV que contem o botao notificacao do parceiro*/
+position:relative;
+left:70%;
+top: -32px;
+width:300px;
+}
 	
-	div#nv a
+div#nv a
 {
 	font-size:16px;
 	color:#000;
@@ -186,29 +213,6 @@ div#menu input
 	margin-right:20px;
 }
 
-div#banner
-{ 
-	position:relative;
-    top:45px; /*espaçamento entre menu e banner de propagandas*/
-	background:none; 
-	width:940px;
-	height:200px;
-	margin:0 auto;	
-    border-radius: 13px 13px 13px 13px;	 
-}
-
-div#conteudo
-{
-    position:relative;
-    top:130px;
-	background:none; 
-	width:940px;
-	height:407px;
-	margin:0 auto;
-	box-shadow: 0px 15px 15px 15px rgba(0,0,0,0.4);
-	border-radius: 13px 13px 13px 13px;
-}
-
 div#confirmatab 
 {
     box-shadow: 0px 15px 15px 15px rgba(0,0,0,0.4);
@@ -221,34 +225,7 @@ div#confirmatab
     
 }
 
-div .chamada
-{
-	background:none; 
-	width:248px;
-	height:300px;
-	margin:0 auto;
-	margin-top:20px;
-	margin-left:50px;
-    border-radius:11px;
-	float:left;/*deixar um do lado do outro*/
-}
 
-
-
-div#image
-{
-border-radius: 50%;
-}
-
-
-
-div#menu img /* alinhar icones */
-{
-     position:relative;
-     display:block;
-     right:10px;
-     top:-8px;
-}
 
  /* ------  Menu dropdown -------  */
 div#dropdown-content a:hover
@@ -342,11 +319,13 @@ div#usuario
 	top:10px;
 	float:auto;/*float*/
 }
-div#bemvindo a:hover{
+
+div#bemvindo a:hover
+{
 	color:#bb2026;
 	border-radius: 13px 13px 13px 13px;
 	box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
-	}
+}
 	
 div#bemvindo
 {
@@ -515,7 +494,7 @@ th, td {
 }
 
 
-	.finalizar {
+.finalizar {
 	position:relative;
 	top:200px;
 	
@@ -529,7 +508,7 @@ th, td {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-	float:right;
+	/* float:right; */
 }
 
 
@@ -559,14 +538,20 @@ div#fpag
 
 /*RODAPÉ*/
 
-footer
+.footer-content
 {
-    text-align: center;
-    bottom: 0;
+	margin: 5% 0 0;
+	color: #fff;
+    text-align: center;    
 	font-size:20px;
 	position:relative;
-	top:200px;
-	
+	height: 20%;
+	background: #bb2026;
+}
+
+#footer-label
+{
+	padding: 5%;
 }
 
 .botaopedido {
