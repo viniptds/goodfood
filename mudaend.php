@@ -1,17 +1,21 @@
-<?php session_start();
-	 if(isset($_GET["act"])){
-	 if($_GET["act"]=="logout"){
-session_destroy();
-header("location: index.php");
-exit;
+<?php 
+session_start();
+if(isset($_GET["act"])){
+	if($_GET["act"]=="logout"){
+		session_destroy();
+		header("location: index.php");
+		exit;
+	}
 }
-	 }
-require 'conexao.php'?>
+require 'conexao.php';
+include 'config.php';
+?>
+
 <html lang="en">
 <meta charset="UTF-8">
  <head>
  <title>Alterando meu Endereço</title>
-  <link rel="stylesheet" type="text/css" href="/s1/style.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/s1/style.css"/>
   </head>
 <?php include "cabecalho.php";?>
 <br><br><br><br>

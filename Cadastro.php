@@ -1,8 +1,11 @@
+<?php 
+include 'config.php';
+?>
 <html lang="en">
  <head>
   <meta charset="UTF-8">
   <title>Meu Cadastro</title>
- <link rel="stylesheet" type="text/css" href="/s1/style.css"/>
+ <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/s1/style.css"/>
  <script type="text/javascript">
  function cadastrar(){
  if (document.form1.nome.value=="" || document.form1.user.value=="" || document.form1.idade.value==""  || document.form1.endereco.value=="" || document.form1.tel.value=="" || document.form1.cpf.value=="" || document.form1.email.value=="" ||  document.form1.senha.value=="" || document.form1.cep.value=="" || document.form1.senha2.value=="")   

@@ -1,8 +1,11 @@
+<?php 
+include 'config.php';
+?>
 <html lang="en">
  <head>
   <meta charset="UTF-8">
   <title>LOGIN</title>
-  <link rel="stylesheet" type="text/css" href="/s1/style.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/s1/style.css"/>
   <script src='https://www.google.com/recaptcha/api.js'></script>
  <script type="text/javascript">
 function valida()
@@ -60,7 +63,7 @@ function valida()
 	</div>
 	<br>
 	<div id="cd">
-		<a href="Cadastro.php">Cadastrar</a>
+		<a href="cadastro.php">Cadastrar</a>
 	</div>
 
 	</fieldset>

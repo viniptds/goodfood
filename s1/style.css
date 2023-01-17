@@ -5,10 +5,6 @@ html, body
     font-family: arial;
 }
 
- #corpo
-{
-    background-image: url('/imagens/fundo.jpg');
-}
 div#topo
 {
 	top:10px;

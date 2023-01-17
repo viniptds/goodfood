@@ -9,7 +9,7 @@ function cadastrosucess()
 	}
 	function cadastrofail()
 	{
-		setTimeout("window.location='Cadastro.php'", 5000); 
+		setTimeout("window.location='cadastro.php'", 5000); 
 	}
 </script>
 <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />

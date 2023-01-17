@@ -1,40 +1,42 @@
-<?php session_start(); 
-	 if(isset($_GET["act"])){
-	 if($_GET["act"]=="logout"){
-session_destroy();
-header("location: index.php");
-exit;
+<?php 
+session_start(); 
+if(isset($_GET["act"])){
+	if($_GET["act"]=="logout"){
+		session_destroy();
+		header("location: index.php");
+		exit;
+	}
 }
-	 }
-	 if(!isset($_SESSION['carrinho'])){ 
+if(!isset($_SESSION['carrinho'])) { 
 	$_SESSION['carrinho'] = array(); 
-}
-else
-	if(isset($_GET['act'])){
-		if($_GET['act'] == 'add'){ 
-			$id = intval($_GET['id']); 
-			if(!isset($_SESSION['carrinho'][$id])){
+} else if(isset($_GET['act'])) {
+	if($_GET['act'] == 'add'){ 
+		$id = intval($_GET['id']); 
+		if(!isset($_SESSION['carrinho'][$id])){
 			$_SESSION['carrinho'][$id] = 1;	
 			header('location: carrinho.php');
-			}
-				else{ 
-					$_SESSION['carrinho'][$id] += 1;
-					header('location: carrinho.php');
-			}
-			}
-		if($_GET['act'] == 'del'){ 
-		$id = intval($_GET['id']);
-			if(isset($_SESSION['carrinho'][$id])){ 
-				unset($_SESSION['carrinho'][$id]);
-		} 
+		} else{ 
+			$_SESSION['carrinho'][$id] += 1;
+			header('location: carrinho.php');
 		}
-          }
-          ?> 
+	}
+	if($_GET['act'] == 'del'){ 
+		$id = intval($_GET['id']);
+		if(isset($_SESSION['carrinho'][$id])){ 
+			unset($_SESSION['carrinho'][$id]);
+		} 
+	}
+}
+
+include 'config.php';
+
+?> 
+
 <html lang="en">
  <head>
   <meta charset="UTF-8">
   <title>Meu Carrinho - GOOD FOOD</title>
-  <link rel="stylesheet" type="text/css" href="/s1/style.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/s1/style.css"/>
  </head>
  
 	 	<?php 

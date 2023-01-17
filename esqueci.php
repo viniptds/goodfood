@@ -1,24 +1,12 @@
+<?php 
+include 'config.php';
+?>
 <html lang="en">
  <head>
   <meta charset="UTF-8">
   <title>Esqueci Minha Senha</title>
-  <link rel="stylesheet" type="text/css" href="/s1/style.css"/>
- <script type="text/javascript">
-function validar()
-{
-	if (document.form1.email.value=="" || document.form1.email2.value=="")
-	{
-		alert("Preencha o(s) campo(s)")
-		return false;
-	}
-	else
-	if(document.form1.email.value != document.form1.email2.value)
-	{
-		alert("Campos não coincidem!")
-		return false;
-	}
-}
- </script>
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/s1/style.css"/>
+
  <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
   </head>
  <?php include('cabecalho.php');?>
@@ -37,5 +25,22 @@ function validar()
 		   <a href="index.php"><font size=3 >Página Inicial</a>
    </form> 	
     </fieldset>
- </body>
+
+<script type="text/javascript">
+	function validar()
+	{
+		if (document.form1.email.value=="" || document.form1.email2.value=="")
+		{
+			alert("Preencha o(s) campo(s)")
+			return false;
+		}
+		else
+		if(document.form1.email.value != document.form1.email2.value)
+		{
+			alert("Campos não coincidem!")
+			return false;
+		}
+	}
+</script>
+</body>
 </html>

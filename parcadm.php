@@ -1,18 +1,20 @@
 <?php
-	session_start();
-		 if(isset($_GET["act"])){
-	 if($_GET["act"]=="logout"){
-session_destroy();
-header("location: index.php");
-exit;
+session_start();
+if(isset($_GET["act"])){
+	if($_GET["act"]=="logout"){
+		session_destroy();
+		header("location: index.php");
+		exit;
+	}
 }
-	 }
-	 ?>
+
+include 'config.php';
+?>
 <html lang="en">
  <head>
   <meta charset="UTF-8">
   <title>Controle Administrativo - GOOD FOOD</title>
-  <link rel="stylesheet" type="text/css" href="/s1/style.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/s1/style.css"/>
   <script type="text/javascript">
 	function loginfail()
 	{

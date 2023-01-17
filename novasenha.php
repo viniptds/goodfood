@@ -1,10 +1,15 @@
-<?php session_start(); require "conexao.php";
+<?php 
+session_start(); 
+
+require "conexao.php";
+include 'config.php';
+
 ?>
 <html lang="en">
   <meta charset="UTF-8">
  <head>
   <title>Trocar Minha Senha</title>
-   <link rel="stylesheet" type="text/css" href="/s1/style.css"/>
+   <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/s1/style.css"/>
  <script type="text/javascript">
 function validar()
 {

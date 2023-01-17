@@ -1,21 +1,26 @@
-<?php session_start();
-		 if(isset($_GET["act"])){
-	 if($_GET["act"]=="logout"){
-session_destroy();
-header("location: index.php");
-exit;
+<?php 
+session_start();
+if(isset($_GET["act"])){
+	if($_GET["act"]=="logout"){
+		session_destroy();
+		header("location: index.php");
+		exit;
+	}
 }
-	 }
-	 if(!isset($_SESSION['carrinho'])){
-	     header("location: minhaconta.php");
-	 }
-	require ("conexao.php");
-	?>
+if(!isset($_SESSION['carrinho'])){
+	header("location: minhaconta.php");
+}
+
+require ("conexao.php");
+
+include 'config.php';
+
+?>
 	<html lang="en">
 	 <head>
 	  <meta charset="UTF-8">
 	  <title>Pedido Efetuado!</title>
-	  <link rel="stylesheet" type="text/css" href="/s1/style.css"/>
+	  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/s1/style.css"/>
 	  <script type="text/javascript">
 	  function loginfail()
 	{

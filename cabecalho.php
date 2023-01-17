@@ -1,5 +1,13 @@
 <?php 
-echo'<script type="text/javascript">
+
+echo
+'<style type="text/css">
+#corpo
+{
+    background-image: url("' . BASE_URL . '/imagens/fundo.jpg");
+}
+</style>
+<script type="text/javascript">
   function carregapag(){
       document.getElementById("load").style.display="none";
       document.getElementById("all").style.display="block";
@@ -24,7 +32,7 @@ echo'<script type="text/javascript">
 		<!-- BOTÃO LOGIN -->
 		<div id="login">
 		<a href="login.php" class="bt">Entrar</a>
-		<a href="Cadastro.php" class="bt" align="right">Cadastrar</a>
+		<a href="cadastro.php" class="bt" align="right">Cadastrar</a>
 
 		</div>
 		</div>

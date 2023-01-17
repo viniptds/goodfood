@@ -3,6 +3,7 @@ if (!isset($_GET['ped'])){
     echo"<script>window.history.go(-1)</script>";
 }
 else{
+error_reporting(E_ALL ^ (E_NOTICE | E_WARNING | E_DEPRECATED));
 include ("dompdf/dompdf_config.inc.php");
 require("conexao.php");
 $ped=$_GET['ped'];
@@ -51,6 +52,7 @@ $script=
 
 //gera o nome do arquivo
 $arquivo=$row['NOMEPAR']."pedido".$ped.".pdf";
+$script = preg_replace('/>\s+</', '><', $script);
 $dompdf->load_html($script);
 $dompdf->render();
 $dompdf->stream($arquivo,array("Attachment" => false));

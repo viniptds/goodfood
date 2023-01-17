@@ -1,46 +1,47 @@
-<?php session_start();
-if(!isset($_SESSION['user']))
-	 {
- header('location: login.php');
- echo "<script>alert('Faça LOGIN para visualizar o cardápio!');</script>";
- }
- if(isset($_GET["act"])){
-	 if($_GET["act"]=="logout"){
-session_destroy();
-header("location: index.php");
-exit;
+<?php 
+session_start();
+if(!isset($_SESSION['user'])) {
+	header('location: login.php');
+	echo "<script>alert('Faça LOGIN para visualizar o cardápio!');</script>";
 }
-	 }
-	 
-	 if(isset($_SESSION['user']) && (isset($_SESSION['senha']))) {
+if(isset($_GET["act"])){
+	if($_GET["act"]=="logout"){
+		session_destroy();
+		header("location: index.php");
+		exit;
+	}
+}
+
+if(isset($_SESSION['user']) && (isset($_SESSION['senha']))) {
 	//cria array para carrinho
-	if(!isset($_SESSION['carrinho']))
-		{
-			$_SESSION['carrinho']=array();
+	if(!isset($_SESSION['carrinho'])) {
+		$_SESSION['carrinho']=array();
+	}
+	if(isset($_GET['act'])) {
+		if($_GET['act']=='add') {
+			$id=intval($_GET['id']);
+
+			if(!isset($_SESSION['carrinho'][$id])){
+				$_SESSION['carrinho']['$id']=1;
+			}
+			//tratamento para não existir itens de parceiros diferentes
+			//não concluído
+			else {
+				$_SESSION['carrinho']['$id']+=1;
+			}
 		}
-		if(isset($_GET['act']))
-			{
-				if($_GET['act']=='add')
-					{
-						$id=intval($_GET[id]);
-						if(!isset($_SESSION['carrinho'][$id])){
-							$_SESSION['carrinho']['$id']=1;
-							
-						}
-						//tratamento para não existir itens de parceiros diferentes
-						//não concluído
-						else 
-							{
-								$_SESSION['carrinho']['$id']+=1;
-							}
-					}
-			  }
- }?>
+	}
+}
+
+include 'config.php';
+
+?>
+
 <html lang="en">
  <head>
   <meta charset="UTF-8">
   <title>Produtos</title>
-  <link rel="stylesheet" type="text/css" href="/s1/style.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>/s1/style.css"/>
   <script type="text/javascript">
   function mostralugares(){
       document.getElementById('dropdown').getElementsByClassName('dropdown-content').display='block';
